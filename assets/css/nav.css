@@ -1,5 +1,8 @@
 nav {
-    background-image: linear-gradient(to bottom, #0000002b, transparent 50%);
+    background-image: linear-gradient(to top, #0000002b, transparent);
+    width: 100%;
+    z-index: 100;
+    position: fixed !important;
 }
 
 #navBar a {
@@ -12,6 +15,15 @@ nav {
 #navBar ul:not(#socialIcons) a:hover {
     background-color: #707070;
     color: white;
+}
+
+#socialIcons a > i {
+    transition: 0.2s ease-in 0.1s;
+}
+
+#socialIcons a:hover > i {
+    transform: translate(2px, -2px);
+    text-shadow: -2px 2px #0000004a;
 }
 
 #socialIcons * {

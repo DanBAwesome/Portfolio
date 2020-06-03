@@ -92,7 +92,8 @@
     width: 100%;
     bottom: 0px;
     font-size: 20px;
-    
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .portfolio-desc > span {

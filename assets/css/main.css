@@ -1,7 +1,17 @@
 @media(max-width: 991px) {
-    #portfolio .sites > div:not(:last-of-type) {
+    #background {
+        background-position: top;
+    }
+    
+    #portfolio .sites > div {
         margin-bottom: 30px;
     }  
+
+    .portfolio-desc > span {
+        display: block !important;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
 }
 
 #background {
@@ -50,16 +60,21 @@
     color: #fff;
 }
 
-#portfolio .sites a:hover p {
+.portfolio-item:hover .portfolio-desc {
     padding-top: 2%;
     padding-bottom: 2%;
+    background-color: #000000d1;
+}
+
+.portfolio-item:hover .portfolio-desc > span {
+    display: block;
 }
 
 .portfolio-item {
     overflow: hidden;
 }
 
-#portfolio .sites a:hover > div {
+.portfolio-item:hover .portfolio-img {
     background-repeat: no-repeat;
     transform: scale(1.2);
     filter: blur(1px);
@@ -69,18 +84,33 @@
     transition: 0.5s !important;
 }
 
-#portfolio .sites p {
+.portfolio-desc {
     background-color: #00000073;
     position: absolute;
     color: #fff;
     backdrop-filter: blur(2px);
-    width: calc(100% - 30px);
-    bottom: -16px;
+    width: 100%;
+    bottom: 0px;
     font-size: 20px;
     
+}
+
+.portfolio-desc > span {
+    display: none;
+    font-size: 15px;
+}
+
+.portfolio-desc > p {
+    margin-bottom: 0;
 }
 
 .img-fit {
     padding-top: calc(2 / 3 * 100%);
     background-size: cover;
+}
+
+.sites {
+    overflow: auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }

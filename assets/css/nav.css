@@ -1,0 +1,57 @@
+nav {
+    background-image: linear-gradient(to top, #0000002b, transparent);
+    width: 100%;
+    z-index: 100;
+    position: fixed !important;
+}
+
+#navBar a {
+    padding-right: 10px;
+    padding-left: 10px;
+    transition: 0.3s ease-out !important;
+    border-radius: 2px;
+}
+
+#navBar ul:not(#socialIcons) a:hover {
+    background-color: #707070;
+    color: white;
+}
+
+#socialIcons a > i {
+    transition: 0.2s ease-in 0.1s;
+}
+
+#socialIcons a:hover > i {
+    transform: translate(0px, -2px);
+    text-shadow: 0 2px #0000002b;
+}
+
+#socialIcons * {
+    font-size: 1.6rem;
+}
+
+#navBar a:hover {
+    transition: 1s linear;
+}
+
+@media(max-width: 991px){
+    #navBar {
+        margin-top: 10px;
+    }
+
+    #socialIcons {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-top: 1px solid #666;
+    }
+}
+
+@media(min-width: 992px){
+    #socialIcons li:not(:last-of-type) {
+        padding-right: 20px;
+    }
+}

@@ -115,3 +115,23 @@
     padding-left: 25px;
     padding-right: 25px;
 }
+
+#scrollText {
+    z-index: 1;
+    position: relative;
+    opacity: 1;
+    pointer-events: none;
+}
+
+#scrollText > div {
+    position: absolute;
+    top:30px;
+}
+
+#scrollText > div > p {
+    display: inline-block;
+    background-color: #000000b8;
+    padding: 10px;
+    border-radius: 30px;
+}
+

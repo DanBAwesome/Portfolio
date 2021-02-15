@@ -28,7 +28,6 @@ function checkScrollMobile() {
         else {
             popupOpacity -= 0.10
             imgPopup.style.opacity = popupOpacity; 
-            console.log(imgPopup.style.opacity);
         }
     }
 
